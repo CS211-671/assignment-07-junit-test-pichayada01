@@ -34,7 +34,7 @@ class StudentTest {
     }
 
     @Test
-    @DisplayName("เปลี่ยนชื่อจากชื่อ initialize เป็นชื่อที่ใส่")
+    @DisplayName("Change Name")
     void testChangeName() {
         s1.changeName("moonkey");
         assertEquals("moonkey", s1.getName());
@@ -48,19 +48,19 @@ class StudentTest {
     }
 
     @Test
-    @DisplayName("รับid ซึ่ง expected เป็น 6610450110")
+    @DisplayName("Get ID")
     void testGetId() {
         assertEquals("6610450110", s1.getId());
     }
 
     @Test
-    @DisplayName("รับชื่อ ซึ่ง expected ชื่อที่เปลี่ยนไปแล้ว")
+    @DisplayName("Get Name")
     void testGetName() {
         assertEquals("moonkey", s1.getName());
     }
 
     @Test
-    @DisplayName("รับคะแนน")
+    @DisplayName("Get score")
     void testGetScore() {
         s1.addScore(85);
         assertEquals(85, s1.getScore());
